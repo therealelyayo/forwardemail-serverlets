@@ -1,0 +1,83 @@
+//- Enhanced Organization schema with comprehensive details
+script(type="application/ld+json", nonce=nonce).
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://serverlets.ai/#organization",
+    "url": "https://serverlets.ai",
+    "name": "Serverlets AI",
+    "alternateName": ["ForwardEmail", "Serverlets AI", "serverlets.ai"],
+    "description": "Serverlets AI is a free, encrypted, and open-source email forwarding and hosting service for custom domains. Trusted by over 1.6+ million domains worldwide.",
+    "slogan": "Privacy-focused email forwarding for custom domains",
+    "foundingDate": "2017",
+    "legalName": "Serverlets AI",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://serverlets.ai/img/logo-square.svg",
+      "width": "512",
+      "height": "512"
+    },
+    "image": "https://serverlets.ai/img/social.png",
+    "email": "support@serverlets.ai",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    },
+    "areaServed": "Worldwide",
+    "serviceType": ["Email Forwarding", "Email Hosting", "SMTP Service", "IMAP Service", "Email API"],
+    "knowsAbout": ["Email Forwarding", "Custom Domain Email", "Email Privacy", "Open Source Email", "SMTP", "IMAP", "POP3", "DNS Configuration", "Email Security", "SPF", "DKIM", "DMARC"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Email Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Free Email Forwarding",
+            "description": "Unlimited email forwarding for custom domains"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Email Hosting",
+            "description": "Full email hosting with IMAP, POP3, and SMTP access"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Email API",
+            "description": "RESTful API for developers to manage email programmatically"
+          }
+        }
+      ]
+    },
+    "sameAs": ["https://serverlets.ai", "https://github.com/forwardemail", "https://x.com/serverlets_ai", "https://news.ycombinator.com/user?id=serverlets_ai", "https://www.reddit.com/r/forwardemail/", "https://www.npmjs.com/~titanism", "https://www.crunchbase.com/organization/forward-email", "https://alternativeto.net/software/forward-email/"],
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "url": "https://serverlets.ai/help",
+        "email": "support@serverlets.ai",
+        "availableLanguage": ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Dutch", "Russian", "Japanese", "Korean", "Chinese", "Arabic", "Hebrew", "Turkish", "Polish", "Czech", "Hungarian", "Swedish", "Norwegian", "Danish", "Finnish", "Indonesian", "Thai", "Vietnamese", "Ukrainian"]
+      },
+      {
+        "@type": "ContactPoint",
+        "contactType": "technical support",
+        "url": "https://serverlets.ai/faq",
+        "availableLanguage": ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Dutch", "Russian", "Japanese", "Korean", "Chinese", "Arabic", "Hebrew", "Turkish", "Polish", "Czech", "Hungarian", "Swedish", "Norwegian", "Danish", "Finnish", "Indonesian", "Thai", "Vietnamese", "Ukrainian"]
+      }
+    ],
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://serverlets.ai/en/search?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
